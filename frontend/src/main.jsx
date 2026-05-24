@@ -6,7 +6,7 @@ import App from "./App";
 import "./index.css";
 
 import ThemeProvider from "./context/ThemeContext";
-import AuthProvider from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthContext";
 
 // ENABLE DARK MODE
 document.documentElement.classList.add("dark");
