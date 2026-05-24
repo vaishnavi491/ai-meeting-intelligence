@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useContext } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../context/authContext";
 
 import {
   Area,
