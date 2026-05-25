@@ -64,7 +64,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
 const response = await axios.get(
-  "http://localhost:5000/api/meetings",
+  "https://ai-meeting-intelligence-ng81.onrender.com/api/meetings",
   {
     headers: {
       Authorization: `Bearer ${token}`,

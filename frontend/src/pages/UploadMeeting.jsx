@@ -49,7 +49,7 @@ function UploadMeeting() {
       const token = localStorage.getItem("token");
 
 const response = await axios.post(
-  "http://localhost:5000/api/meetings",
+  "https://ai-meeting-intelligence-ng81.onrender.com/api/meetings",
   formData,
   {
     headers: {

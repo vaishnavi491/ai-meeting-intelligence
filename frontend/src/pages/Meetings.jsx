@@ -18,7 +18,7 @@ function Meetings() {
 
   const fetchMeetings = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/meetings");
+      const response = await axios.get("https://ai-meeting-intelligence-ng81.onrender.com/api/meetings");
       setMeetings(response.data.meetings || []);
     } catch (error) {
       console.log(error);

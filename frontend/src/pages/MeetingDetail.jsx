@@ -21,7 +21,7 @@ function MeetingDetail() {
 
   const fetchMeeting = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/meetings/${id}`);
+      const response = await axios.get(`https://ai-meeting-intelligence-ng81.onrender.com/api/meetings/${id}`);
       setMeeting(response.data.meeting);
     } catch (err) {
       console.log(err);
@@ -36,7 +36,7 @@ function MeetingDetail() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/meetings/${id}`);
+      await axios.delete(`https://ai-meeting-intelligence-ng81.onrender.com/api/meetings/${id}`);
       toast.success("Meeting deleted");
       navigate("/meetings");
     } catch (error) {

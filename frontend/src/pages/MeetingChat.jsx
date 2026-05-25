@@ -54,7 +54,7 @@ function MeetingChat() {
 
       const response =
         await axios.post(
-          "http://localhost:5000/api/chat",
+          "https://ai-meeting-intelligence-ng81.onrender.com/api/chat",
           {
             question: text,
           }
